@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Model1StoreContainer" CdmEntityContainer="Entities1">
+    <EntitySetMapping Name="Topics">
+      <EntityTypeMapping TypeName="Model1.Topic">
+        <MappingFragment StoreEntitySet="Topic">
+          <ScalarProperty Name="ID_Topic" ColumnName="ID_Topic" />
+          <ScalarProperty Name="Topic_Name" ColumnName="Topic_Name" />
+          <ScalarProperty Name="Subject" ColumnName="Subject" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

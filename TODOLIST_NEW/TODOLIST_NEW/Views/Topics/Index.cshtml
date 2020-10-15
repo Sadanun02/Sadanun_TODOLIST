@@ -1,0 +1,62 @@
+﻿@model IEnumerable<TODOLIST_NEW.Models.Topic>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>To-DO-List</h1>
+
+
+
+<table class="table" align="center">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Topic_Name)
+        </th>
+
+
+        @*<th>
+            @Html.DisplayNameFor(model => model.Subject)
+        </th>*@
+        <th>
+            @Html.DisplayNameFor(model => model.Date)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+
+    <tr>
+        <td>
+            <input type="checkbox" checked="@item.ID_Topic" ;"  id="checkAll"/>
+            <a href="/Topics/Details/@item.ID_Topic">
+                @item.Topic_Name
+            </a>
+        </td>
+        @*<td>
+                @Html.DisplayFor(modelItem => item.Topic_Name)
+            </td>*@
+        @*<td>
+                @Html.DisplayFor(modelItem => item.Subject)
+            </td>*@
+        <td>
+            @Html.DisplayFor(modelItem => item.Date)
+        </td>
+        @*<td>
+                @Html.DisplayFor(modelItem => item.Status)
+            </td>*@
+
+
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id = item.ID_Topic }) |
+            @*@Html.ActionLink("Details", "Details", new { id = item.ID_Topic }) |*@
+            @Html.ActionLink("Delete", "Delete", new { id = item.ID_Topic })
+        </td>
+    </tr>
+}
+</table>
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>

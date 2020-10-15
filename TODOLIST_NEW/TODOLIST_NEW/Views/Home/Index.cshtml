@@ -1,0 +1,70 @@
+﻿@*@{
+    ViewBag.Title = "Home Page";
+}*@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    @*<meta name="viewport" content="width=device-width, initial-scale=1">*@
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="#">
+    <title>Beauttio - HTML Template by WowThemes.net</title>
+    <!-- CSS -->
+    <link href="~/Content/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,400italic,300italic,300,700,700italic' rel='stylesheet' type='text/css'>
+
+</head>
+<body class="frontpage">
+
+  
+
+    <div class="menu-outer">
+        <div class="menu-icon">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <nav>
+            <ul>
+                <li>@Html.ActionLink("TO-DO-LIST", "Index", "Topics")</li>
+            </ul>
+        </nav>
+    </div>
+    <a class="menu-close" onClick="return true">
+        <div class="menu-icon">
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </a>
+
+ 
+    <div class="container">
+        <section class="background" >
+
+            <div class="content-wrapper">
+                <div class="intro">
+                    <h1>
+                        <span class="smaller wow zoomIn" data-wow-duration="2s" data-wow-delay="0.5">Web Application</span>
+                        <span class="big wow pulse" data-wow-duration="1s" data-wow-delay="0s">TO DO LIST</span><br />
+                    </h1>
+                </div>
+            </div>
+        </section>
+  
+            </div>
+
+
+
+
+    <!-- Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="~/Content/js/common.js"></script>
+    <script src="~/Content/js/home.js"></script>
+    <script src="~/Content/js/testimonials.js"></script>
+
+</body>
+</html>
